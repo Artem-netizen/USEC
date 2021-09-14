@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(5, 84, 136, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s;
+}
+.modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  max-width: 286px;
+  width: 100%;
+  background-color: var(--wh-color);
+}
+.cansel-img {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  max-width: 25px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+.cansel-img:hover {
+  transform: scale(0.8);
+}
+.modal-title {
+  margin-bottom: 23px;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: var(--dark-color);
+}
+.more-inp {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-inner {
+  margin-bottom: 18px;
+  padding: 19px 30px;
+  width: 80%;
+  background-color: var(--wh-color);
+  border: 1px solid #E1E2E2;
+  border-radius: 40px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: 'Jost', sans-serif;
+}
+.input-inner::placeholder {
+  font-family: 'Jost', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--dark-color);
+}
+.textarea {
+  padding: 18px 30px;
+  width: 225px;
+  height: 82px;
+  resize: none;
+  background-color: var(--wh-color);
+  border: 1px solid #E1E2E2;
+  border-radius: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: 'Jost', sans-serif;
+}
+.textarea::placeholder {
+  font-family: 'Jost', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--dark-color);
+}
+.policy {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: flex-start;
+}
+.check {
+  margin-right: 11px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--wh-color);
+  border: 1px solid #E1E2E2;
+  border-radius: 4px;
+}
+.policy-text {
+  text-align: left;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  color: var(--dark-color);
+}
+.policy-link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+  color: var(--beige-color);
+}
+.form-btn {
+  display: inline-block;
+  padding: 19px 40px;
+  border: none;
+  width: 100%;
+  background-color: var(--beige-color);
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--wh-color);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form-btn:hover {
+  background-color: #2995DD;
+}
